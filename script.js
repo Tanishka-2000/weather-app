@@ -1,4 +1,5 @@
-let place = prompt('Enter location.');
+const input = document.querySelector('input');
+const output = document.querySelector('div');
 
 async function getWeather(cityName){
     try{
@@ -18,6 +19,26 @@ async function getWeather(cityName){
     }
 }
 
-getWeather(place).then(res => {
-    console.log(res);
+function loadImage(weather){
+    url = "images/" + weather + ".jpg";
+    document.body.style.backgroundImage = 'url(' + url + ')';
+}
+
+function updateScreen(data){
+    loadImage(data.weather);
+
+    output.querySelector('h1').textContent = data.name;
+    let paras = output.querySelectorAll('p');
+    paras[0].textContent = 'Weather : ' + data.weather;
+    paras[1].textContent = 'Temprature : ' + data.temp;
+    paras[2].textContent = 'Feels like : ' + data.feelsLike;
+    paras[3].textContent = 'Minimum Temprature : ' + data.tempMin;
+    paras[4].textContent = 'Maximum Temprature : ' + data.tempMax;
+    paras[5].textContent = 'Humidity : ' + data.humidity + '%';
+}
+
+input.addEventListener('change', function(e){
+    getWeather(input.value).then(res => {
+        updateScreen(res);
+    });
 })

@@ -1,1 +1,27 @@
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-size: 100% 100%;
+}
+.heading{
+    font-size: 3.5rem;
+    margin: 50px 730px;
+}
+input{
+    margin-left: 650px;
+    background-color: transparent;
+    font-size: 3rem;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    opacity: .8;
+}
+div{
+    font-size: 2.2rem;
+    margin: 50px 700px;
+}
