@@ -3,20 +3,65 @@
   <head>
     <meta charset="utf-8">
     <title>Weather App</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- google icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- stylesheet -->
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
   </head>
   <body>
-      <h1 class="heading">Weather App</h1>
-      <input type="text" placeholder="City Name">
-      <div>
-          <h1></h1>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
+      <header>
+          <h1 class="heading">Weather App</h1>
+          <input type="text" placeholder="City Name">
+      </header>
+
+      <div class="main">
+          <h1>Saharanpur</h1>
+          <div class="weather-data">
+              <div>
+                  <h3>Weather</h3>
+                  <span class="material-symbols-outlined">partly_cloudy_day</span>
+                  <p></p>
+              </div>
+              <div>
+                  <h3>Temprature</h3>
+                  <span class="material-symbols-outlined">thermostat</span>
+                  <p></p>
+              </div>
+              <div>
+                  <h3>Feels Like</h3>
+                  <span class="material-symbols-outlined">thermostat</span>
+                  <p></p>
+              </div>
+              <div>
+                  <h3>Minimum Temprature</h3>
+                  <span class="material-symbols-outlined">ac_unit</span>
+                  <p></p>
+              </div>
+              <div>
+                  <h3>Maximum Temprature</h3>
+                  <span class="material-symbols-outlined">sunny</span>
+                  <p></p>
+              </div>
+              <div>
+                  <h3>Wind (m/s)</h3>
+                  <span class="material-symbols-outlined">air</span>
+                  <p></p>
+              </div>
+              <div>
+                  <h3>Humidity %</h3>
+                  <span class="material-symbols-outlined">water_drop</span>
+                  <p></p>
+              </div>
+          </div>
       </div>
+      <div class="gif">
+          <img src="" alt="">
+      </div>
+
   </body>
 </html>
