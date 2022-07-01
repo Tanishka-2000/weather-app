@@ -1,13 +1,23 @@
 let place = prompt('Enter location.');
 
-fetch('https://api.openweathermap.org/data/2.5/weather?q=' + place + '&appid=fb821944aeb2aeded96b9fa63f6f9094&units=metric',{mode: 'cors'})
-.then(response => {
-  return response.json();
-}).then(response2 => {
-  console.log('City : ' + response2.name);
-  console.log('Country Code : ' + response2.sys.country);
-  console.log('Temprature : ' + response2.main.temp);
-  console.log('Weather : ' + response2.weather[0].main);
-}).catch(err => {
-  console.log(err);
-});
+async function getWeather(cityName){
+    try{
+        let response = await fetch('https://api.openweathermap.org/data/2.5/weather?q=' + cityName + '&appid=fb821944aeb2aeded96b9fa63f6f9094&units=metric',{mode: 'cors'});
+        response = await response.json();
+        return {
+            name: response.name,
+            weather: response.weather[0].main,
+            temp: response.main.temp,
+            feelsLike: response.main.feels_like,
+            tempMin: response.main.temp_min,
+            tempMax: response.main.temp_max,
+            humidity: response.main.humidity,
+        };
+    }catch(err){
+        console.log(err);
+    }
+}
+
+getWeather(place).then(res => {
+    console.log(res);
+})
