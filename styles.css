@@ -5,8 +5,105 @@
 }
 body{
     font-family: 'Roboto', sans-serif;
+    background-image: url('image.jpg');
+    background-size: cover;
+    color: white;
+    font-size: 2rem;
 }
-header{
+main{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+.weather{
+    font-size: 5rem;
+}
+.date,.time{
+    font-size: 1rem;
+    font-weight: 100;
+    margin: 10px 0;
+    color:#aaa;
+}
+.left .material-symbols-outlined{
+    font-size: 7rem;
+    margin: 20px 0;
+    display: block;
+}
+
+.temprature{
+    font-size: 4rem;
+}
+button.change_unit{
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #aaa;
+}
+button.change_unit:hover{
+    color: #fff;
+}
+input.search{
+    display: block;
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: 2rem;
+    background-color: transparent;
+}
+
+/* ---------right------- */
+.right{
+    font-size: 1.5rem;
+}
+.right>div{
+    display: flex;
+    margin: 20px 0 ;
+}
+.right .material-symbols-outlined{
+    font-size: 3rem;
+    margin-right: 8px;
+}
+/* -------bottom--------- */
+.bottom{
+    margin-top: 100px;
+}
+.btn-group>button{
+    font-size: 1.8rem;
+    border: none;
+    background-color: transparent;
+    color: #aaa;
+    margin: 0 20px;
+    padding-left: 30px;
+}
+.btn-group>button.active{
+    color: #fff;
+}
+.btn-group>button:hover{
+    color: #fff;
+}
+/* .wrapper{
+    height: 230px;
+    overflow-y: hidden;
+} */
+.forecast{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    padding: 10px 50px;
+
+}
+.forecast>div{
+    display: inline-block;
+    width: 400px;
+    font-weight: 100;
+    line-height: 1.5;
+}
+.bottom .material-symbols-outlined{
+    font-size: 5rem;
+}
+/* header{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,4 +142,4 @@ span.material-symbols-outlined{
 .gif{
     text-align: center;
     padding-top: 20px;
-}
+} */

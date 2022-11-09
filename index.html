@@ -9,59 +9,87 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- google icon -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- google icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <!-- stylesheet -->
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
   </head>
   <body>
-      <header>
-          <h1 class="heading">Weather App</h1>
-          <input type="text" placeholder="City Name">
-      </header>
+      <main>
 
-      <div class="main">
-          <h1>Saharanpur</h1>
-          <div class="weather-data">
-              <div>
-                  <h3>Weather</h3>
-                  <span class="material-symbols-outlined">partly_cloudy_day</span>
-                  <p></p>
-              </div>
-              <div>
-                  <h3>Temprature</h3>
+          <section class="left">
+              <p class="weather">Sunny</p>
+              <p class='cityName'>Saharanpur</p>
+              <p class='date'>Sunday 6 nov 2022</p>  <!--toDateString-->
+              <p class='time'>11:55</p>   <!--toLocaleTimeString-->
+              <span class="material-symbols-outlined">sunny</span>
+              <p class='temprature'>35 °C</p>
+              <button class="change_unit">change to °F</button>
+              <input class='search' type="text" placeholder="search">
+          </section>
+
+                        <!--  ==========right=========  -->
+
+
+          <section class="right">
+
+              <div class="feels_like">
                   <span class="material-symbols-outlined">thermostat</span>
-                  <p></p>
+                  <div>
+                      <p>feels like</p>
+                      <h2>37 °C</h2>
+                  </div>
               </div>
-              <div>
-                  <h3>Feels Like</h3>
-                  <span class="material-symbols-outlined">thermostat</span>
-                  <p></p>
-              </div>
-              <div>
-                  <h3>Minimum Temprature</h3>
-                  <span class="material-symbols-outlined">ac_unit</span>
-                  <p></p>
-              </div>
-              <div>
-                  <h3>Maximum Temprature</h3>
-                  <span class="material-symbols-outlined">sunny</span>
-                  <p></p>
-              </div>
-              <div>
-                  <h3>Wind (m/s)</h3>
-                  <span class="material-symbols-outlined">air</span>
-                  <p></p>
-              </div>
-              <div>
-                  <h3>Humidity %</h3>
+
+              <div class="humidity">
                   <span class="material-symbols-outlined">water_drop</span>
-                  <p></p>
+                  <div>
+                      <p>humidity</p>
+                      <h2>30%</h2>
+                  </div>
               </div>
-          </div>
-      </div>
-      <div class="gif">
+
+              <div class="chance_of_rain">
+                  <span class="material-symbols-outlined">rainy</span>
+                  <div>
+                      <p>chance of rain</p> <!--pop -->
+                      <h2>2%</h2>
+                  </div>
+              </div>
+
+              <div class="wind">
+                  <span class="material-symbols-outlined">air</span>
+                  <div>
+                      <p>wind speed</p>
+                      <h2>10 m/sec</h2>
+                  </div>
+              </div>
+
+      </main>
+
+                    <!--  ==========bottom=========  -->
+
+          <section class='bottom'>
+
+              <div class="btn-group">
+                  <button id='daily' class="active">Daily</button>
+                  <button id='hourly'>Hourly</button>
+              </div>
+              <div class="forecast"></div>
+
+              <template>
+                  <div>
+                      <p></p>
+                      <h2></h2>
+                      <span class="material-symbols-outlined">sunny</span>
+                      <p></p>
+                  </div>
+              </template>
+          </section>
+      <!-- <div class="gif">
           <img src="" alt="">
-      </div>
+      </div> -->
 
   </body>
 </html>
