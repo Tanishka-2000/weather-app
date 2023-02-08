@@ -71,7 +71,7 @@ input.search{
 }
 /* -------bottom--------- */
 .bottom{
-    margin-top: 50px;
+    margin-top: 30px;
     padding: 0 60px;
 }
 .btn-group>button{
@@ -105,46 +105,11 @@ input.search{
     font-weight: 100;
     line-height: 1.5;
 }
+
+.forecast p{
+    font-weight: 700;
+}
+
 .bottom .material-symbols-outlined{
     font-size: 5rem;
 }
-/* header{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-}
-.heading{
-    font-size: 3.5rem;
-}
-input{
-    background-color: transparent;
-    font-size: 2rem;
-    border: none;
-    border-bottom: 1px solid black;
-    outline: none;
-    opacity: .8;
-}
-span.material-symbols-outlined{
-    font-size: 5rem;
-}
-.main{
-    font-size: 2rem;
-    text-align: center;
-    padding: 80px;
-    padding-bottom: 0;
-    display: none;
-}
-.weather-data{
-    display: grid;
-    grid-template-columns: repeat(7,250px);
-}
-.weather-data>div{
-    border: 1px solid black;
-    margin-top: 50px;
-}
-.gif{
-    text-align: center;
-    padding-top: 20px;
-} */
