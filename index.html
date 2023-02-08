@@ -1,65 +1,65 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang='en' dir='ltr'>
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <title>Weather App</title>
     <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel='preconnect' href='https://fonts.googleapis.com'>
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+    <link href='https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap' rel='stylesheet'>
     <!-- google icon -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0' />
     <!-- google icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0' />
     <!-- stylesheet -->
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <link rel='stylesheet' href='styles.css'>
+    <script src='script.js' defer ></script>
   </head>
   <body>
       <main>
 
-          <section class="left">
-              <p class="weather">Sunny</p>
+          <section class='left'>
+              <p class='weather'>Sunny</p>
               <p class='cityName'>Saharanpur</p>
               <p class='date'>Sunday 6 nov 2022</p>  <!--toDateString-->
               <p class='time'>11:55</p>   <!--toLocaleTimeString-->
-              <span class="material-symbols-outlined">sunny</span>
+              <span class='material-symbols-outlined'>sunny</span>
               <p class='temprature'>35 °C</p>
-              <button class="change_unit">change to °F</button>
-              <input class='search' type="text" placeholder="search">
+              <button class='change_unit'>change to °F</button>
+              <input class='search' type='text' placeholder='search'>
           </section>
 
                         <!--  ==========right=========  -->
 
 
-          <section class="right">
+          <section class='right'>
 
-              <div class="feels_like">
-                  <span class="material-symbols-outlined">thermostat</span>
+              <div class='feels_like'>
+                  <span class='material-symbols-outlined'>thermostat</span>
                   <div>
                       <p>feels like</p>
                       <h2>37 °C</h2>
                   </div>
               </div>
 
-              <div class="humidity">
-                  <span class="material-symbols-outlined">water_drop</span>
+              <div class='humidity'>
+                  <span class='material-symbols-outlined'>water_drop</span>
                   <div>
                       <p>humidity</p>
                       <h2>30%</h2>
                   </div>
               </div>
 
-              <div class="chance_of_rain">
-                  <span class="material-symbols-outlined">rainy</span>
+              <div class='chance_of_rain'>
+                  <span class='material-symbols-outlined'>rainy</span>
                   <div>
                       <p>chance of rain</p> <!--pop -->
                       <h2>2%</h2>
                   </div>
               </div>
 
-              <div class="wind">
-                  <span class="material-symbols-outlined">air</span>
+              <div class='wind'>
+                  <span class='material-symbols-outlined'>air</span>
                   <div>
                       <p>wind speed</p>
                       <h2>10 m/sec</h2>
@@ -72,23 +72,23 @@
 
           <section class='bottom'>
 
-              <div class="btn-group">
-                  <button id='daily' class="active">Daily</button>
+              <div class='btn-group'>
+                  <button id='daily' class='active'>Daily</button>
                   <button id='hourly'>Hourly</button>
               </div>
-              <div class="forecast"></div>
+              <div class='forecast'></div>
 
               <template>
                   <div>
                       <p></p>
                       <h2></h2>
-                      <span class="material-symbols-outlined">sunny</span>
+                      <span class='material-symbols-outlined'>sunny</span>
                       <p></p>
                   </div>
               </template>
           </section>
-      <!-- <div class="gif">
-          <img src="" alt="">
+      <!-- <div class='gif'>
+          <img src='' alt=''>
       </div> -->
 
   </body>
