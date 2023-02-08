@@ -50,7 +50,8 @@ function updateScreen(){
     paras[2].textContent = d.toDateString();
     paras[3].textContent = (h === 0 ? 12 : h) + ' : ' + m + ' ' + (d.getHours() >= 12 ? 'pm' : 'am');
     paras[4].textContent = data.list[0].main.temp + (unit === 'metric' ? '°C' : '°F');
-    left.querySelector('span').textContent = getIcon(data.list[0].weather[0].main.toLowerCase(), data.list[0].sys.pod);
+    left.querySelector('img').setAttribute('src', `http://openweathermap.org/img/wn/${data.list[0].weather[0].icon}@2x.png`);
+    // left.querySelector('span').textContent = getIcon(data.list[0].weather[0].main.toLowerCase(), data.list[0].sys.pod);
     input.value = '';
 
 
@@ -87,7 +88,7 @@ function updateBottomScreen(){
         clon = x.content.cloneNode(true);
         ps = clon.querySelectorAll('p');
         h =  clon.querySelector('h2');
-        s = clon.querySelector('span');
+        img = clon.querySelector('img');
         ps[0].textContent = days[day.getDay()];
         h.textContent = data.list[i].main.temp + (unit === 'metric' ? '°C' : '°F');
         if(interval === 'Daily'){
@@ -95,7 +96,8 @@ function updateBottomScreen(){
         }else{
             ps[1].textContent = day.getHours()%12 + ' : ' + day.getMinutes() + ' ' + (day.getHours() > 12 ? 'pm' : 'am');
         }
-        s.textContent = getIcon(data.list[i].weather[0].main.toLowerCase(), data.list[i].sys.pod);
+        // s.textContent = getIcon(data.list[i].weather[0].main.toLowerCase(), data.list[i].sys.pod);
+        img.setAttribute('src', `http://openweathermap.org/img/wn/${data.list[0].weather[0].icon}@2x.png`);
         bottom.appendChild(clon);
     }
 }
