@@ -13,7 +13,7 @@ This a weather app that displays real time weather data with 5 day forecast. It 
 any city for its weather data, along with some other information like, wind speed, humidity etc.
 
 ## Illustration
-![App imgae](https://tanishka-2000.github.io/weather-app/app_image.jpg)
+![App image](https://tanishka-2000.github.io/weather-app/app_image.png)
 
 ## Demo
 Here is working live demo [https://tanishka-2000.github.io/weather-app/](https://tanishka-2000.github.io/weather-app/)
